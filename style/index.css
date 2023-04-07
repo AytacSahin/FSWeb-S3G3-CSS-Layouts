@@ -1,1 +1,161 @@
-/* CSS stillerinizi buraya girin */
+body{
+    font-family: 'Roboto Mono', monospace;
+    padding: 0;
+    margin: 0 auto;
+    width: 160vh;
+    color: black;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 3%, rgba(255,254,221,1) 20%, rgba(254,221,155,1) 58%, rgba(254,211,135,1) 66%, rgba(254,194,101,1) 76%, rgba(253,167,45,1) 92%);
+}
+/* Her bir tag için özellik tanımla; h1-h2-h3-p */
+h1{
+    font-size: 2rem;
+    font-weight: bolder;
+}z
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+p{
+    font-size: 1rem;
+}
+
+/* Başlangıç: Container'a Özellikleri Atama */
+.container {
+    display: flex;
+    flex-direction: column;
+    /* width: 140vh; */
+    height: 180vh;
+    margin: 0 auto;
+}
+
+/* 1. Kısım - Title "Site Başlığı" */
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 3rem;
+}
+
+/* 2. Kısım - Header */
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    height: 15rem;
+}
+
+.header ul{
+    display: flex;
+    padding: 0.8rem 0;    
+}
+.header ul li a{
+    padding: 0 1.6rem;  
+    border: 0.1rem solid orange;
+    background-color: black;
+    color: white;
+}
+
+.header ul li a:hover{
+    border: 0.2rem solid black;
+    background-color: orange;
+    color: black;
+}
+
+/* 3. Kısım - SectionOne */
+.sectionOne{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 20rem;
+}
+
+.sectionOne .sectionContent{
+    padding: 0 0 0 3rem;
+}
+
+.sectionOne .sectionContent a{
+    margin: 0rem;
+    padding: 0 0.5rem 0 0.5rem;  
+    border: 0.1rem solid orange;
+    background-color: black;
+    color: white;
+    width: 10rem;
+}
+
+.sectionOne .sectionContent a:hover{
+    border: 0.2rem solid black;
+    background-color: orange;
+    color: black;
+}
+
+.sectionOne img{
+    width: 100rem;
+    border-radius: 3%;
+    border: 2px solid rgb(50, 47, 47);
+}
+
+/* 4. Kısım - SectionTwo */
+.sectionTwo {
+    height: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.sectionTwo container-box{
+    height: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.sectionTwoOne{
+    height: 40rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.sectionTwo img{
+    width: 18rem;
+    /* border-radius: 50%; */
+    border: 3px solid rgb(50, 47, 47);
+}
+
+.sectionTwoOne img{
+    width: 18rem;
+    /* border-radius: 50%; */
+    border: 3px solid rgb(50, 47, 47);
+}
+
+/* 4. Kısım - SectionOne */
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    height: 15rem;
+}
+
+.footer a{
+    margin: 0rem;
+    padding: 0 0.5rem 0 0.5rem;  
+    border: 0.1rem solid orange;
+    background-color: white;
+    color: black;
+    width: 10rem;
+    text-align: center;
+}
