@@ -24,12 +24,12 @@ h3{
 }
 
 p{
-    font-size: 1.1rem;
+    font-size: 1.3rem;
 }
 
 /* 1. Kısım - Title "Site Başlığı" */
 .title{
-    height: 6rem;
+    height: 100%;
     width: 100%;
     color: white;
     background-color: black;
@@ -40,17 +40,16 @@ p{
 
 /* Başlangıç: Container'a Özellikleri Atama */
 .container {
-    width: 80vw;
-    height: 180vh;
+    max-width: 75vw;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 3rem
+    gap: 3rem 0;
 }
 
 /* 2. Kısım - Header */
 .header {
-    margin: 3rem 0rem;
+    margin: 3rem 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,15 +61,17 @@ p{
     display: flex;
     padding: 0.8rem 0;    
 }
+
 .header nav a{
-    padding: 0.5rem 3rem;  
+    padding: 0.3rem 1rem;  
     border: 0.1rem solid white;
+    border-radius: 2rem;
     background-color: black;
     color: white;
 }
 
 .header nav a:hover{
-    border: 0.2rem solid black;
+    border: 0.1rem solid black;
     background-color: gray;
     color: black;
 }
@@ -78,26 +79,30 @@ p{
 /* 3. Kısım - SectionOne */
 .sectionOne{
     display: flex;
-    gap: 2rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .sectionOne .sectionImage {
-    flex-basis: 30rem;
+    flex-basis: 30vw;
     object-fit: contain;
 }
 .sectionOne .sectionImage img{
     object-fit: contain;
     border-radius: 50%;
-    border: 10px solid rgb(50, 47, 47);
+    object-fit: cover;
+    border: 5px solid rgb(50, 47, 47);
 }
 
 .sectionOne .sectionContent{
+    width: 30rem;
     text-align: right;
 }
 
 .sectionOne .sectionContent a{
     padding: 0 2rem 0 2rem;  
     border: 0.1rem solid gray;
+    border-radius: 2rem;
     background-color: black;
     color: white;
     width: 10rem;
@@ -114,17 +119,21 @@ p{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-top: 0.3rem solid black;
     gap: 1rem 1rem;
     text-align: center;
+} 
+
+.sectionTwo h2{
+    border-bottom: 5px solid black;
 } 
 
 .sectionTwo .projects{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 2rem 0;
-    gap: 1rem 1rem;
+    gap: 1rem 2rem;
 } 
 
 .sectionTwo .projects .project .projectImage{
@@ -134,14 +143,12 @@ p{
 
 .sectionTwo img{
     object-fit: contain;
-    width: 14.7rem;
+    width: 14rem;
     border-radius: 50%;
     border: 5px solid rgb(50, 47, 47);
 }
 
-
-
-/* 4. Kısım - SectionOne */
+/* 4. Kısım - Footer */
 .footer{
     display: flex;
     flex-direction: column;
@@ -149,7 +156,8 @@ p{
     align-items: center;
     background-color: black;
     color: white;
-    height: 15rem;
+    height: 8rem;
+
 }
 
 .footer a{
@@ -161,3 +169,4 @@ p{
     width: 10rem;
     text-align: center;
 }
+
