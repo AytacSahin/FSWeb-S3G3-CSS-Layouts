@@ -170,3 +170,78 @@ p{
     text-align: center;
 }
 
+/* ... > 800px Icın Media Etiketi */
+
+@media (max-width: 800px) {
+
+    body {
+        background-color: yellow;
+    } 
+
+    .title{
+        text-align: center;
+    }
+    
+    /* 2. Kısım - Header */
+    .header {
+        text-align: center;
+    }
+    
+    .header nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    /* 3. Kısım - SectionOne */
+    .sectionOne{
+        justify-content: center;
+    }
+    
+    .sectionOne .sectionImage {
+        flex-basis: 20rem;
+    }
+
+    .sectionOne .sectionContent{
+        text-align: center;
+    }   
+    
+}
+
+/* 500 px > ... > 800px Icın Media Etiketi */
+
+@media (max-width: 500px) {
+
+    body {
+        background-color: green;
+    } 
+
+    .title{
+        text-align: center;
+    }
+    
+    /* 2. Kısım - Header */
+    .header {
+        text-align: center;
+    }
+    
+    .header nav{
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    
+    /* 3. Kısım - SectionOne */
+    .sectionOne{
+        justify-content: center;
+    }
+    
+    .sectionOne .sectionImage {
+        flex-basis: 20rem;
+    }
+
+    .sectionOne .sectionContent{
+        text-align: center;
+    }   
+    
+}
